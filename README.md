@@ -10,15 +10,16 @@ Keep in mind : Everything is a test, the way you code, the way you structure you
 ## To Do
 
 You must conceive a REST API dealing with tourism. It contains several elements.
-  -
-
 
 To do :
- - Create the endpoints, leave the functions as un-implemented. For exemple, `get` routes will look like ```
+ - Create the endpoints, leave the functions as un-implemented. For exemple, `get` routes will look like 
+ ```js
  {
    res.send({message: 'unimplemented'});
  }
  ```
  or better if you like.
 
- - Implemented the endpoint to get 
+ - Implement the endpoint which gets objects close to given coordinates. You can use Overpass API (as an example, this URL gets amenities close to coordinates :  http://overpass-api.de/api/interpreter?data=[out:json];(node[%22amenity%22](around:2000,51.5,0.01);way[%22amenity%22](around:2000,51.5,0.01);relation[%22amenity%22](around:2000,51.5,0.01););out;%3E;)
+
+ - 
