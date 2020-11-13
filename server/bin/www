@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+const app = require('..');
+const models = require('../models');
+
+models.sequelize.sync().then(() => {
+    let server = null;
+    let port = null;
+
+    const http = require('http');
+    port = 3000;
+    server = http.createServer(app);
+
+    server.listen(port, () => {
+        console.info(`Listenning [${(process.env.NODE_ENV || 'dev').toUpperCase()}] : ${port}`);
+    });
+});

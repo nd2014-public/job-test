@@ -1,0 +1,16 @@
+{
+  "name": "test-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Médéric Salles",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node initdb.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0"
+  }
+}
